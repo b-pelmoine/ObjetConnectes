@@ -212,6 +212,7 @@ a.link:hover::before
             text-shadow: 0px 0px 10px #D12249;
             background: #D12249;
             padding: .5vw;
+            position: relative;
         }
 
         .parallax-window {
@@ -309,13 +310,7 @@ a.link:hover::before
              left: 47.5vw;
              margin-left: 0;
              margin-right: 0;
-         }
-
-         .arrow.blue{
-             border-color: #150C46;
-         }
-        .arrow.blue::before{
-             border-color: #150C46;
+             overflow: hidden;
          }
 
          .arrow::before{
@@ -325,6 +320,7 @@ a.link:hover::before
              -moz-transform-origin: 0% 0%;
              -o-transform-origin: 0% 0%;
              transform-origin: 0% 0%;
+             bottom: 50%;
              left: 50%;
              width: 50%;
              height: 50%;
@@ -332,7 +328,7 @@ a.link:hover::before
              border: .3vh solid #FFED70;
              border-top: none;
              border-left: none;
-             border-radius: 20%;
+             border-radius: 10%;
          }
 
          .arrow.top::before{
@@ -529,7 +525,7 @@ a.link:hover::before
             content: ' ';
             height: 33px;
             width: 2px;
-            background-color: #FFF;
+            background-color: #FFED70;
             z-index: 11;
         }
     
@@ -544,7 +540,7 @@ a.link:hover::before
         .project-title{
             font-size: 3vw;
             margin-bottom: 1vh;
-            color: #f50057;
+            color: #90FBE1;
             text-shadow: 0px 0px 1vw #222;
         }
 
@@ -600,14 +596,14 @@ a.link:hover::before
             list-style: none;
         }
 
-        div.tasks-header{
+        div.ksp-header{
             font-size: 2vw;
             font-family: 'roboto', sans-serif;
             margin: 1vw 0;
             list-style-type: '-';
         }
 
-        ul.tasks li.task{
+        ul.ksp-list li.ksp{
             font-size: 1.8vw;
             font-family: 'roboto', sans-serif;
             margin-left: 2vw;
@@ -621,7 +617,7 @@ a.link:hover::before
 
         #project-view a.redirect{
             text-decoration: none;
-            color: #f50057;
+            color: #FFED70;
             font-size: 1.5vw;
             padding-top: 5vh;
             display: flex;
@@ -762,12 +758,12 @@ a.link:hover::before
                 font-size: 4.5vw;
             }
 
-            div.tasks-header{
+            div.ksp-header{
                 font-size: 5vw;
                 margin-top: 3vh;
             }
 
-            ul.tasks li.task{
+            ul.ksp-list li.ksp{
                 font-size: 4vw;
                 margin: 0 5vw
             }
@@ -853,11 +849,11 @@ a.link:hover::before
                 font-size: 1.5vw;
             }
 
-            div.tasks-header{
+            div.ksp-header{
                 font-size: 2vw;
             }
 
-            ul.tasks li.task{
+            ul.ksp-list li.ksp{
                 font-size: 1.5vw;
             }
         }
