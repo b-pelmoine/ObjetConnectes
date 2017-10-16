@@ -33,16 +33,6 @@ $(function() {
         setTimeout(function() {
             $("#loader").fadeOut();
         }, 500);
-        //nameChanger
-        var stateParams = 
-        {
-            States : ["Concept Artist","Bug Fixer","Shader Enthusiast", "Game Addict", "C++ Lover", "2D Artist", "Game Programmer"],
-            stateIndex : 0,
-            stateSelector : $("#container .headline .state"),
-            rollFrequency : 2000
-        }
-        rollNewState(stateParams);
-        setInterval(function(){rollNewState(stateParams)}, stateParams.rollFrequency);
         loadImgAsync(".project-BG", "image-src");
     });
 
@@ -129,35 +119,6 @@ function updateNavigator(scroll)
             $("#navigator-headline").addClass("active");
         $("#navigator-headline").text(newHeadline);
     }
-}
-
-var curInterval = 0;
-
-function rollNewState(state)
-{
-    clearInterval(curInterval)
-
-    if(state.stateIndex >= state.States.length)
-        state.stateIndex = 0;
-
-    var newState = state.States[state.stateIndex++].toLowerCase()
-    var i=0;
-    var text = "";
-    state.stateSelector.text(text);
-    curInterval = setInterval(function(){
-        if(i >= newState.length + newState.length/2)
-        {
-            text = text.slice(0, -2)
-        }
-        else
-        {
-            if(i < newState.length)
-                text += newState[i];
-        }
-        displaybar = (i%2 == 0 || i >= newState.length) ?"|" : "";
-        state.stateSelector.text(" " + text.concat(displaybar));
-        ++i;
-    }, state.rollFrequency/(newState.length*2))
 }
 
 function loadImgAsync(selector, tag)
