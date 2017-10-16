@@ -201,7 +201,7 @@ a.link:hover::before
             text-shadow: 0px 0px 1px #90FBE1;
         }
 
-        .hotpink{
+        /*.hotpink{
             color: #FFF !important;
             z-index: 5;
             display: table;
@@ -213,6 +213,17 @@ a.link:hover::before
             background: #D12249;
             padding: .5vw;
             position: relative;
+        }*/
+
+        .darkside{
+            padding: .5vw;
+            position: relative;
+            background-image: url("../files/pictures/inclusetconnectes.png");
+            width: 60vw;
+            height: 50vh;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
         }
 
         .parallax-window {
