@@ -218,7 +218,7 @@ a.link:hover::before
         .darkside{
             padding: .5vw;
             position: relative;
-            background-image: url("../files/pictures/inclusetconnectes.png");
+            background-image: url("../files/pictures/inclusetconnectesLogo.png");
             width: 60vw;
             height: 50vh;
             background-repeat: no-repeat;
@@ -286,7 +286,7 @@ a.link:hover::before
             left: 10vw;
             transform: translateY(-20vh);
             font-family: 'roboto', sans-serif;
-            font-weight: 100;
+            font-weight: 400;
          }
 
          #navigator-headline.active{
@@ -454,6 +454,40 @@ a.link:hover::before
              cursor: zoom-in;
              filter: brightness(.25);
 
+             -webkit-transition: all 300ms ease;
+            -moz-transition: all 300ms ease;
+            -ms-transition: all 300ms ease;
+            -o-transition: all 300ms ease;
+            transition: all 300ms ease;
+         }
+
+        #projects .project:hover:after{
+             content : "Voir le projet";
+             position: absolute;
+             top: 0;
+             padding: 4%;
+             color: #000;
+             background: #FFED70;
+             font-family: 'Roboto', sans-serif;
+             font-weight: 700;
+             border-bottom-right-radius: 1em; 
+             -webkit-transition: all 300ms ease;
+            -moz-transition: all 300ms ease;
+            -ms-transition: all 300ms ease;
+            -o-transition: all 300ms ease;
+            transition: all 300ms ease;
+         }
+
+         #projects .project:after{
+             content : "Voir le projet";
+             position: absolute;
+             top: -20%;
+             padding: 4%;
+             color: #000;
+             background: #FFED70;
+             font-family: 'Roboto', sans-serif;
+             font-weight: 700;
+             border-bottom-right-radius: 1em; 
              -webkit-transition: all 300ms ease;
             -moz-transition: all 300ms ease;
             -ms-transition: all 300ms ease;
@@ -655,11 +689,45 @@ a.link:hover::before
 
         #contact .picto
         {
-            width: 3.5vw;
+            width: 5vw;
             background-size: contain;
             padding: .5vw;
             background: #FFF;
-            border-radius: 20%;
+            border-radius: 5%;
+            box-shadow: 0px 0px 2vw #333;
+        }
+
+        #top-links{
+            position: absolute;
+            z-index: 5;
+        }
+
+        #top-links .picto-top
+        {
+            max-width: 5vw;
+            max-height: 6.5vh;
+            background-size: cover;
+            padding: .5vw;
+            filter : invert(100%);
+            border-radius: .3em;
+            margin-top: 2vh; 
+            margin-left: .5vw;
+            opacity: .5;
+        }
+
+        #top-links .picto-top.large
+        {
+            max-width: 7.5vw;
+        }
+
+        #top-links .picto-top:hover
+        {
+            opacity: 1;
+            -webkit-transition: all 100ms ease;
+            -moz-transition: all 100ms ease;
+            -ms-transition: all 100ms ease;
+            -o-transition: all 100ms ease;
+            transition: all 100ms ease;
         }
 
         #contact .social-links
@@ -676,7 +744,7 @@ a.link:hover::before
         #contact span.link{
             position: relative;
             color: #FFF;
-            margin: 3vh;
+            margin-bottom: 8vh;
             display: block;
             flex-direction: column;
             height: 5vh;
@@ -686,10 +754,10 @@ a.link:hover::before
         #contact span.link a{
             color : #FFF;
             text-decoration: none;
-            margin-left: 1vw;
+            margin-left: 2vw;
             font-size: 1.5vw;
             font-family: 'roboto', sans-serif;
-            font-weight: 100;
+            font-weight: 400;
             -webkit-transition: all 300ms ease;
             -moz-transition: all 300ms ease;
             -ms-transition: all 300ms ease;
@@ -697,7 +765,7 @@ a.link:hover::before
             transition: all 300ms ease;
         }
         #contact span.link a:hover{
-            color : #DDD;
+            color : #FFED70;
         }
 
         #contact span.link img{
@@ -711,7 +779,7 @@ a.link:hover::before
     /* specific media fixes */
 
         /* Smartphones (portrait) ----------- */
-        @media only screen and (max-width : 480px) {
+        @media only screen and (max-width : 768px) {
             div.headline .coolIntro
             {
                 font-size : 8vw;
@@ -727,11 +795,11 @@ a.link:hover::before
             #contact .picto
             {
                 width: 10vw;
-                padding: 1vw;
+                padding: .5vw;
             }
             #contact span.link a
             {
-                font-size: 5vw;
+                font-size: 4vw;
             }
             #projects .project:hover span{
                 opacity: 0;
@@ -787,6 +855,20 @@ a.link:hover::before
                 font-size: 5vw;
                 padding-top: 5vh;
             }
+            #projects .project:hover span{
+             opacity: 0;
+            }
+            #top-links .picto-top
+            {
+                max-width: 10vw;
+                padding: .5vw;
+                margin-top: 2vh; 
+                margin-left: 2vw;
+            }
+            #top-links .picto-top.large
+            {
+                max-width: 15vw;
+            }
         }
         /* Tablet ----------- */
         @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -804,20 +886,28 @@ a.link:hover::before
             }
             #contact .picto
             {
-                width: 5vw;
-                padding: .75vw;
+                width: 7vw;
+                padding: .5vw;
             }
             #contact span.link a
             {
-                font-size: 2.5vw;
-            }
-            #projects .project:hover span{
-             opacity: 0;
+                font-size: 3vw;
             }
 
             #project-view a.redirect{
                 font-size: 2vw;
                 padding-top: 3vh;
+            }
+            #top-links .picto-top
+            {
+                max-width: 10vw;
+                padding: .5vw;
+                margin-top: 2vh; 
+                margin-left: 2vw;
+            }
+            #top-links .picto-top.large
+            {
+                max-width: 15vw;
             }
         }
         /* Desktops and laptops ----------- */
