@@ -7,9 +7,13 @@
     #D12249 rouge
 */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
+@keyframes chroab {
+  0% {
+    text-shadow: 0 0 #D12249, 0 0 #0c2aa8, 0 6px 0 transparent, 8px 0 0 transparent;
+  }
+  100% {
+    text-shadow: 0.06ex 0 #D12249, -0.06ex 0 #0c2aa8, 0 0.14ex 0 rgba(0, 0, 0, 0.8), 0.12ex 0 0 rgba(0, 0, 0, 0.8);
+  }
 }
 
 h1, p, h2, h3, h4, ul, li, div {
@@ -479,6 +483,7 @@ a.link:hover::before
          }
 
          #projects .project:after{
+             cursor: pointer;
              content : "Voir le projet";
              position: absolute;
              top: -20%;
@@ -518,6 +523,33 @@ a.link:hover::before
             -ms-transition: all 300ms ease;
             -o-transition: all 300ms ease;
             transition: all 300ms ease;
+         }
+
+         .button{
+             text-decoration: none;
+             color: #000;
+             position: absolute;
+             padding: 2vh 1.5vw;
+             background: #FFED70;
+             font-family: 'roboto', sans-serif;
+             font-weight: 700;
+             bottom: 5vh;
+             right: 5vw;
+             -webkit-transition: all 300ms ease;
+            -moz-transition: all 300ms ease;
+            -ms-transition: all 300ms ease;
+            -o-transition: all 300ms ease;
+            transition: all 300ms ease;
+         }
+
+         .button:hover{
+             color : #FFED70;
+             background: #000;
+            -webkit-transition: all 100ms ease;
+            -moz-transition: all 100ms ease;
+            -ms-transition: all 100ms ease;
+            -o-transition: all 100ms ease;
+            transition: all 100ms ease;
          }
 
          /* sub : project-container */
@@ -766,6 +798,7 @@ a.link:hover::before
         }
         #contact span.link a:hover{
             color : #FFED70;
+            animation: chroab 100ms ease-in both;
         }
 
         #contact span.link img{
@@ -774,12 +807,83 @@ a.link:hover::before
 
          /* end sub : contact */
 
+         /* sub : project hub */
+
+            .projecthub
+            {
+                color: #fff;
+                position: relative;
+                width : 80vw !important;
+                margin-top: 5vh; 
+            }
+
+            .projecthub .pageHeader
+            {
+                padding: 2vh 1.5vw;
+                padding-left: 0;
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-size: 3vw;
+                border-bottom: 3px solid #FFED70;
+            }
+
+            .projecthub .project-list-root
+            {
+                margin-left: 5vw;
+                margin-top: 3vh;
+                list-style: none;
+            }
+
+            .projecthub .project-entries-year
+            {
+                padding: 2vh 1.5vw;
+                font-family: "Roboto", sans-serif;
+                font-weight: 700;
+                font-size: 2vw;
+            }
+            .projecthub .project-list
+            {
+                margin-left: 1vw;
+                margin-top: 2vh;
+                list-style: none;
+            }
+            .projecthub .project-entry a
+            {
+                padding: 2vh 1.5vw;
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 1.5vw;
+                text-decoration: none;
+                color: #FFED70;
+            }
+            .projecthub .project-entry a:hover
+            {
+                color: #D12249;
+            }
+
+         /* end sub : project hub */
+
     /* end All media */
 
     /* specific media fixes */
 
         /* Smartphones (portrait) ----------- */
         @media only screen and (max-width : 768px) {
+            .projecthub .pageHeader
+            {
+                font-size: 9vw;
+            }
+            .projecthub .project-entries-year
+            {
+                font-size: 8vw;
+                padding-left: 0;
+            }
+            .projecthub .project-entry a
+            {
+                font-size: 5vw;
+            }
+
+            /**/
             div.headline .coolIntro
             {
                 font-size : 8vw;
@@ -799,7 +903,7 @@ a.link:hover::before
             }
             #contact span.link a
             {
-                font-size: 4vw;
+                font-size: 3vw;
             }
             #projects .project:hover span{
                 opacity: 0;
@@ -869,6 +973,14 @@ a.link:hover::before
             {
                 max-width: 15vw;
             }
+
+            .button{
+                right: 20vw;
+                left: 20vw;
+                top: calc(75vh + 5px);
+                bottom: auto;
+                text-align: center;
+         }
         }
         /* Tablet ----------- */
         @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -909,6 +1021,7 @@ a.link:hover::before
             {
                 max-width: 15vw;
             }
+            
         }
         /* Desktops and laptops ----------- */
         @media only screen  and (min-width : 1024px) {
