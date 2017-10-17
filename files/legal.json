@@ -1,0 +1,11 @@
+{
+    "Host" : "16000 CNAM ENJMIN Angoulême",
+    "Author" : "PELMOINE Benjamin",
+    "resources" : {
+        "Pure.css" : "http://purecss.io/",
+        "Parallax.js" : "http://pixelcog.github.io/parallax.js/",
+        "Owlcarousel2" : "https://owlcarousel2.github.io/OwlCarousel2/",
+        "Pace.js" : "http://github.hubspot.com/pace/",
+        "LightGallery.js" : "http://sachinchoolur.github.io/lightGallery/"
+    }
+}

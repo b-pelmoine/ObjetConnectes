@@ -831,6 +831,20 @@ a.link:hover::before
             vertical-align: middle;
         }
 
+        #footer{
+            text-align: center;
+            width : 100vw;
+            color : #FFF;
+            background: #000;
+            padding: 2vw;
+            font-size: 1em;
+        }
+
+        #footer a{
+            color : #FFED70;
+            text-decoration: none;
+        }
+
          /* end sub : contact */
 
          /* sub : project hub */
@@ -949,6 +963,9 @@ a.link:hover::before
 
         /* Smartphones (portrait) ----------- */
         @media only screen and (max-width : 768px) {
+            #footer{
+                font-size: .7em;
+            }
             
             .gallery img{
                 width: calc(50% - 10px);
