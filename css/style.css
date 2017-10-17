@@ -879,15 +879,69 @@ a.link:hover::before
                 font-family: "Roboto", sans-serif;
                 font-weight: 400;
                 font-size: 1.5vw;
+                position: relative;
                 text-decoration: none;
                 color: #FFED70;
+                -webkit-transition: all 300ms ease;
+                -moz-transition: all 300ms ease;
+                -ms-transition: all 300ms ease;
+                -o-transition: all 300ms ease;
+                transition: all 300ms ease;
             }
             .projecthub .project-entry a:hover
             {
                 color: #D12249;
+                margin-left: .5vw;
+                -webkit-transition: all 300ms ease;
+                -moz-transition: all 300ms ease;
+                -ms-transition: all 300ms ease;
+                -o-transition: all 300ms ease;
+                transition: all 300ms ease;
+            }
+
+            .projecthub .project-entry a:hover:before
+            {
+                content :"";
+                position: absolute;
+                left: 0%;
+                width : .25vw;
+                height: .25vw;
+                border-right : .2vw solid #D12249;
+                border-top : .2vw solid #D12249;
+                transform: rotate(45deg);
+                top: calc(50% - 0.25vw);
+                margin-left: .5vw;
             }
 
          /* end sub : project hub */
+
+         /* sub : lightgallery */
+
+            .project-main{
+                margin: 5vh 0;
+            }
+
+            .gallery{
+                margin-top : 5vh;
+            }
+            .gallery a{
+               text-decoration: none;
+            }
+
+            .gallery img{
+                position: relative;
+                max-width: 50vw;
+                width: calc(25% - 10px);
+                border-bottom : 5px solid #FFED70;
+                box-sizing: border-box;
+                filter: brightness(50%);
+            }
+            .gallery img:hover{
+                border-bottom : 5px solid #FFED70;
+                filter: brightness(100%);
+            }
+         
+         /*end sub : lightgallery */
 
     /* end All media */
 
@@ -895,9 +949,14 @@ a.link:hover::before
 
         /* Smartphones (portrait) ----------- */
         @media only screen and (max-width : 768px) {
+            
+            .gallery img{
+                width: calc(50% - 10px);
+            }
             .projecthub .pageHeader
             {
                 display: inline-block;
+                width: 100%;
                 font-size: 9vw;
             }
             .projecthub .project-entries-year
@@ -1024,7 +1083,7 @@ a.link:hover::before
             }
             .projecthub .pageHeader
             {
-                display: inline-block;
+                width: 100%;
                 font-size: 5vw;
             }
             .projecthub .project-entries-year
