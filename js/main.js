@@ -27,12 +27,13 @@ var mobileModeEnabled = false;
 }).call(this);
 
 $(function() {
+    loadImgAsync(".project-BG", "image-src");
+    
     Pace.on('done', function() {
         $("body").removeClass("stop-scrolling");
         setTimeout(function() {
             $("#loader").fadeOut();
         }, 500);
-        loadImgAsync(".project-BG", "image-src");
     });
 
     $(window).scroll(function (event) {

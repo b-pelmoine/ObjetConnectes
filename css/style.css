@@ -1211,6 +1211,11 @@ a.link:hover::before
             ul.ksp-list li.ksp{
                 font-size: 1.5vw;
             }
+            #project-view a.redirect{
+                position: fixed;
+                right: 5vw;
+                bottom: 5vh;
+            }
         }
         /* Large screens ----------- */
         @media only screen  and (min-width : 1824px) {

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8" />
+    <title>Mime et Démine</title>
+    <meta name="description" content="Mime et Démine, projet étudiant réalisé lors du workshop : 'Inclus & connectés' - Angoulême, du 16 au 21 Octobre 2017" />
+    <meta name="author" content="Benjamin Pelmoine" />
+    <meta name="keywords" content="Angoulême, ENJMIN, Objets connectés, Octobre 2017, CNAM, Inclus et connecté, workshop, Mime et Démine" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta property="og:title" content="Mime et Démine - projet étudiant 2017" />
+    <meta property="og:locale" content="en_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.b-pelmoine.com/ObjetsConnectes/files/projects/2017/full_projects/mimeetdemine.html" />
+    <meta property="og:description" content="Mime et Démine, projet étudiant réalisé lors du workshop - Angoulême, 16-21 Octobre 2017" />
+    <!-- site css -->
+    <link rel="stylesheet" href="../../../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.8/css/lightgallery.min.css" />
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
+</head>
+<body class="stop-scrolling">
+    <div id="loader"></div>
+    <div id="container" class="projecthub">
+        <a class="back-to-menu" href="../../projects_hub.html">> Retourner à la liste des projets</a>
+        <div class="pageHeader">Mime et Démine</div>
+        <div class="project-main">
+            <div class="project-description">
+            <p><b>Problématique d’inclusion : </b></br>
+            Le but est de trouver la solution sans parler, la langue des signes est donc à privilégier.</br></p>
+            <p><b>Principe :</b></br>
+            2 joueurs doivent s'entraider en trouvant un moyen de désamorcer une bombe sans communiquer oralement.</br></p>
+            <p><b>Technologie :</b></br>
+            Le jeu se joue à l'aide d'une fausse bombe avec différents mécanismes créés avec la technologie Arduino.</p>
+            <div id="lightgallery" class="gallery">
+                <a href="media/MimeEtDemine/inclusetconnectes_03.jpg">
+                    <img src="media/MimeEtDemine/thumb_inclusetconnectes_03.jpg">
+                </a>
+                <a href="media/MimeEtDemine/inclusetconnectes_06.jpg" >
+                    <img src="media/MimeEtDemine/thumb_inclusetconnectes_06.jpg" />
+                </a>
+                <a href="media/MimeEtDemine/inclusetconnectes_08.jpg">
+                    <img src="media/MimeEtDemine/thumb_inclusetconnectes_08.jpg">
+                </a>
+                <a href="media/MimeEtDemine/inclusetconnectes_13.jpg">
+                    <img src="media/MimeEtDemine/thumb_inclusetconnectes_13.jpg">
+                </a>
+                <a href="media/MimeEtDemine/inclusetconnectes_14.jpg">
+                    <img src="media/MimeEtDemine/thumb_inclusetconnectes_14.jpg">
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.8/js/lightgallery-all.min.js"></script>
+    <script src="../../../../js/pace.min.js"></script>
+    <script>
+        Pace.on('start', function() { 
+            $("body").addClass("stop-scrolling");
+            $("#loader").fadeIn(1);
+        });
+        Pace.on('done', function() {
+        $("body").removeClass("stop-scrolling");
+        setTimeout(function() {
+            $("#loader").fadeOut();
+        }, 500);
+        });
+        $(document).ready(function() {
+            $("#lightgallery").lightGallery(); 
+        });
+    </script>
+</body>
+</html>
