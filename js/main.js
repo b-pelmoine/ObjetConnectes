@@ -21,7 +21,6 @@ var mobileModeEnabled = false;
     $( '.scrollable' ).on( 'mousewheel DOMMouseScroll', function ( e ) {
         var e0 = e.originalEvent,
             delta = e0.wheelDelta || -e0.detail;
-
         this.scrollTop += ( delta < 0 ? 1 : -1 ) * 50;
         e.preventDefault();
     });
@@ -132,7 +131,7 @@ function loadImgAsync(selector, tag)
 function loadproject(el)
 {
     var m_url = el.data("content");
-    var container = $("#project-view")
+    var container = $("#project-view");
     $("#project-view #project-container").text("");
     if(!container.hasClass("active"))
     {

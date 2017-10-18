@@ -26,6 +26,10 @@ h1, p, h2, h3, h4, ul, li, div {
   text-shadow: 0px 0px 2px #D12249;
 } 
 
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 a.link
 {
     position: relative;
@@ -584,6 +588,9 @@ a.link:hover::before
              visibility: hidden;
              display: none;
              color : #FFF;
+             width: 90vw;
+             height: 80vh;
+             position: fixed;
          }
 
          #project-view.active{
@@ -591,8 +598,6 @@ a.link:hover::before
             display: block;
             position: fixed;
             top: 0;
-            height: 100%;
-            width: 100%;
             z-index: 10;
          }
 
@@ -608,7 +613,7 @@ a.link:hover::before
          }
 
          a.close-project-view {
-            position: absolute;
+            position: fixed;
             right: 32px;
             top: 32px;
             width: 32px;
@@ -656,6 +661,14 @@ a.link:hover::before
             font-size: 2vw;
             font-family: 'roboto', sans-serif;
             color : #ccc;
+        }
+
+        .project-description b{
+            color : #D12249;
+        }
+
+        .project-description p{
+            padding: 2vh 0;
         }
 
         .team-header{
