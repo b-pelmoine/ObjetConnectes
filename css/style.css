@@ -35,6 +35,23 @@ h1, p, h2, h3, h4, ul, li, div {
     display: none; 
 }
 
+.videoWrapper
+{
+    position: relative;
+    height: 100vh;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.videoWrapper iframe {
+    width: 60vw; 
+    height: calc(60vw / 1.778); /* 100/56.25 = 560/315 = 1.778 */
+    border-bottom: 5px solid #FFED70;
+}
+
 a.link
 {
     position: relative;
@@ -982,6 +999,12 @@ a.link:hover::before
 
         /* Smartphones (portrait) ----------- */
         @media only screen and (max-width : 768px) {
+            .videoWrapper iframe {
+                width: 100vw; 
+                height: calc(100vw / 1.778); /* 100/56.25 = 560/315 = 1.778 */
+                border-bottom: 5px solid #FFED70;
+            }
+
             #footer{
                 font-size: .7em;
             }

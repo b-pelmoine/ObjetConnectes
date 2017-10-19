@@ -98,9 +98,14 @@ function updateNavigator(scroll)
     }
     else{
         if(scroll > height/2 && scroll <= (1.5*height))
-            activePanel = $(".node-projects");
+            activePanel = $(".node-video");
         else
-            activePanel = $(".node-contact");
+            if(scroll > (1.5*height) && scroll <= (2.5*height))
+            {
+                activePanel = $(".node-projects");
+            }
+            else
+                activePanel = $(".node-contact");
     }
     //add-remove active class
     if(!activePanel.hasClass("active"))
