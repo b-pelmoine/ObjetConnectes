@@ -1196,7 +1196,7 @@ a.link:hover::before
         /* Desktops and laptops ----------- */
         @media only screen  and (min-width : 1024px) {
             .navigator{
-                min-width: 5vw;
+                min-width: 8vw;
                 z-index: 10;
                 height: 25vh;
                 position: fixed;
