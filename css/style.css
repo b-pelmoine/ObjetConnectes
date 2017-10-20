@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100,400,700');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
 /*
     #FFED70 jaune
@@ -19,6 +19,7 @@
 html, body{
     max-width: 100vw;
     overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
 }
 
 h1, p, h2, h3, h4, ul, li, div {
@@ -315,7 +316,7 @@ a.link:hover::before
             top: -20vh;
             left: 10vw;
             transform: translateY(-20vh);
-            font-family: 'roboto', sans-serif;
+            font-family: 'Quicksand', sans-serif;
             font-weight: 400;
          }
 
@@ -498,7 +499,7 @@ a.link:hover::before
              padding: 4%;
              color: #000;
              background: #FFED70;
-             font-family: 'Roboto', sans-serif;
+             font-family: 'Quicksand', sans-serif;
              font-weight: 700;
              border-bottom-right-radius: 1em; 
              -webkit-transition: all 300ms ease;
@@ -516,7 +517,7 @@ a.link:hover::before
              padding: 4%;
              color: #000;
              background: #FFED70;
-             font-family: 'Roboto', sans-serif;
+             font-family: 'Quicksand', sans-serif;
              font-weight: 700;
              border-bottom-right-radius: 1em; 
              -webkit-transition: all 300ms ease;
@@ -538,7 +539,7 @@ a.link:hover::before
             COLOR: #fff;
             font-size: 2vw;
             text-shadow: 0px 5px 5vw #000;
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Quicksand', sans-serif;
          }
 
          #projects .project:hover span{
@@ -557,7 +558,7 @@ a.link:hover::before
              position: absolute;
              padding: 2vh 1.5vw;
              background: #FFED70;
-             font-family: 'roboto', sans-serif;
+             font-family: 'Quicksand', sans-serif;
              font-weight: 700;
              bottom: 5vh;
              right: 5vw;
@@ -580,7 +581,7 @@ a.link:hover::before
 
          .back-to-menu{
              font-size: 1vw;
-             font-family: 'roboto', sans-serif;
+             font-family: 'Quicksand', sans-serif;
              font-weight: 700;
              color: #000;
              background: #FFED70;
@@ -682,7 +683,7 @@ a.link:hover::before
 
         .project-description{
             font-size: 2vw;
-            font-family: 'roboto', sans-serif;
+            font-family: 'Quicksand', sans-serif;
             color : #ccc;
         }
 
@@ -696,13 +697,13 @@ a.link:hover::before
 
         .team-header{
             font-size: 2vw;
-            font-family: 'roboto', sans-serif;
+            font-family: 'Quicksand', sans-serif;
             margin: 1vw 0
         }
 
         ul.team-members li.member{
             font-size: 1.5vw;
-            font-family: 'roboto', sans-serif;
+            font-family: 'Quicksand', sans-serif;
             margin: 1vh 0;
             margin-left: 5vw;
             list-style: none;
@@ -730,21 +731,21 @@ a.link:hover::before
 
         ul.team-members li.team-section{
             font-size: 1.5vw;
-            font-family: 'roboto', sans-serif;
+            font-family: 'Quicksand', sans-serif;
             margin-left: 0vw;
             list-style: none;
         }
 
         div.ksp-header{
             font-size: 2vw;
-            font-family: 'roboto', sans-serif;
+            font-family: 'Quicksand', sans-serif;
             margin: 1vw 0;
             list-style-type: '-';
         }
 
         ul.ksp-list li.ksp{
             font-size: 1.8vw;
-            font-family: 'roboto', sans-serif;
+            font-family: 'Quicksand', sans-serif;
             margin-left: 2vw;
             list-style-type: '-';
         }
@@ -850,7 +851,7 @@ a.link:hover::before
             text-decoration: none;
             margin-left: 2vw;
             font-size: 1.5vw;
-            font-family: 'roboto', sans-serif;
+            font-family: 'Quicksand', sans-serif;
             font-weight: 400;
             -webkit-transition: all 300ms ease;
             -moz-transition: all 300ms ease;
@@ -897,7 +898,7 @@ a.link:hover::before
             {
                 padding: 2vh 1.5vw;
                 padding-left: 0;
-                font-family: "Roboto", sans-serif;
+                font-family: 'Quicksand', sans-serif;
                 font-weight: 700;
                 font-size: 3vw;
                 border-bottom: 3px solid #FFED70;
@@ -913,7 +914,7 @@ a.link:hover::before
             .projecthub .project-entries-year
             {
                 padding: 2vh 1.5vw;
-                font-family: "Roboto", sans-serif;
+                font-family: 'Quicksand', sans-serif;
                 font-weight: 700;
                 font-size: 2vw;
             }
@@ -926,7 +927,7 @@ a.link:hover::before
             .projecthub .project-entry a
             {
                 padding: 2vh 1.5vw;
-                font-family: "Roboto", sans-serif;
+                font-family: 'Quicksand', sans-serif;
                 font-weight: 400;
                 font-size: 1.5vw;
                 position: relative;
